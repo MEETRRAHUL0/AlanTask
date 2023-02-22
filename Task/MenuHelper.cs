@@ -33,7 +33,7 @@ namespace Task
             if (input == 1)
             {
                 string word = FunHelper.Read("word to find.");
-                Console.WriteLine($"Count : {txtfile.Split(' ').Where(w => w.ToLower() == word.ToLower()).Count()}\n");
+                Console.WriteLine($"Count : {txtfile.Split(new char[] { ' ','\'' }).Where(w => w.ToLower() == word.ToLower()).Count()}\n");
             }
             else if (input == 2)
             {
